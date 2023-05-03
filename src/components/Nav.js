@@ -1,5 +1,13 @@
 const Nav = () => {
-  return <navigation>Tutaj będą linki</navigation>;
+  return (
+    <nav>
+      <ul>
+        <li>dom</li>
+        <li>logo</li>
+        <li>kontakt</li>
+      </ul>
+    </nav>
+  );
 };
 
 export default Nav;

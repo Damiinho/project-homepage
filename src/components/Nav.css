@@ -1,0 +1,7 @@
+nav {
+    position: fixed;
+    width: 300px;
+    top: 0;
+    right: 0;
+    background-color: blue;
+}

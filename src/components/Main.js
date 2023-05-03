@@ -1,10 +1,14 @@
-import LogoIMG from "../img/logo.png";
+import Contact from "./Main-components/Contact";
+import Home from "./Main-components/Home";
+import Logo from "./Main-components/Logo";
 
 const Main = () => {
   return (
     <main>
       Tutaj będzie główna część strony
-      <img src={LogoIMG} alt="logo" />
+      <Home />
+      <Logo />
+      <Contact />
     </main>
   );
 };
