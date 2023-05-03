@@ -5,17 +5,17 @@ const Nav = () => {
     <nav>
       <ul>
         <li>
-          <Link smooth to="#home">
+          <Link smooth to="/#home">
             dom
           </Link>
         </li>
         <li>
-          <Link smooth to="#logo">
+          <Link smooth to="/#logo">
             logo
           </Link>
         </li>
         <li>
-          <Link smooth to="#contact">
+          <Link smooth to="/#contact">
             kontakt
           </Link>
         </li>
