@@ -1,7 +1,112 @@
+$logo-top: 10px;
+$logo-right: 20px;
+
 nav {
-    position: fixed;
-    width: 300px;
-    top: 0;
-    right: 0;
-    background-color: blue;
+  position: fixed;
+  width: 100vw;
+  height: 100px;
+  top: 0;
+  right: 0;
+  background-color: black;
+  a {
+    color: white;
+  }
+
+  img.nav-logo {
+    position: absolute;
+    top: $logo-top;
+    right: $logo-right;
+    height: 80px;
+    &.move {
+      animation-name: movement;
+      animation-duration: 1s;
+    }
+  }
+}
+
+@keyframes movement {
+  0% {
+    top: $logo-top;
+    right: $logo-right;
+  }
+  5% {
+    top: calc($logo-top - 1px);
+    right: calc($logo-right + 1px);
+  }
+  10% {
+    top: calc($logo-top + 2px);
+    right: calc($logo-right - 2px);
+  }
+  15% {
+    top: calc($logo-top - 1px);
+    right: calc($logo-right + 2px);
+  }
+  20% {
+    top: calc($logo-top - 1px);
+    right: calc($logo-right - 1px);
+  }
+  25% {
+    top: calc($logo-top + 1px);
+    right: calc($logo-right + 3px);
+  }
+  30% {
+    top: $logo-top;
+    right: calc($logo-right - 1px);
+  }
+  35% {
+    top: calc($logo-top - 2px);
+    right: $logo-right;
+  }
+  40% {
+    top: calc($logo-top + 2px);
+    right: calc($logo-right + 1px);
+  }
+  45% {
+    top: calc($logo-top - 2px);
+    right: calc($logo-right - 4px);
+  }
+  50% {
+    top: $logo-top;
+    right: calc($logo-right + 1px);
+  }
+  55% {
+    top: calc($logo-top + 4px);
+    right: calc($logo-right - 1px);
+  }
+  60% {
+    top: calc($logo-top - 3px);
+    right: calc($logo-right + 4px);
+  }
+  65% {
+    top: calc($logo-top - 1px);
+    right: $logo-right;
+  }
+  70% {
+    top: calc($logo-top + 2px);
+    right: calc($logo-right - 1px);
+  }
+  75% {
+    top: $logo-top;
+    right: calc($logo-right + 2px);
+  }
+  80% {
+    top: calc($logo-top + 1px);
+    right: calc($logo-right - 2px);
+  }
+  85% {
+    top: calc($logo-top - 1px);
+    right: calc($logo-right + 3px);
+  }
+  90% {
+    top: calc($logo-top + 2px);
+    right: $logo-right;
+  }
+  95% {
+    top: calc($logo-top - 2px);
+    right: calc($logo-right + 2px);
+  }
+  100% {
+    top: $logo-top;
+    right: $logo-right;
+  }
 }

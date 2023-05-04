@@ -5,7 +5,6 @@ import Logo from "./Main-components/Logo";
 const Main = () => {
   return (
     <main>
-      Tutaj będzie główna część strony
       <Home />
       <Logo />
       <Contact />

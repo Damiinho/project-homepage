@@ -1,6 +1,15 @@
 import { HashLink as Link } from "react-router-hash-link";
+import LogoDuckIMG from "../img/duck-emoji-clipart-original.svg";
 
 const Nav = () => {
+  const handleDuckClick = () => {
+    const duck = document.querySelector(".nav-logo");
+    duck.classList.add("move");
+    setTimeout(() => {
+      duck.classList.remove("move");
+    }, 2000);
+  };
+
   return (
     <nav>
       <ul>
@@ -20,6 +29,12 @@ const Nav = () => {
           </Link>
         </li>
       </ul>
+      <img
+        className="nav-logo"
+        src={LogoDuckIMG}
+        alt="logo"
+        onClick={handleDuckClick}
+      />
     </nav>
   );
 };
